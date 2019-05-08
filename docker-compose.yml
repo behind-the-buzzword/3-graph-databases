@@ -5,9 +5,9 @@ services:
   database:
     image: neo4j:latest
     volumes:
-      - ./data:/data
-      - ./logs:/logs
-      - ./import:/var/lib/neo4j/import
+      - ./data:/data:Z
+      - ./logs:/logs:Z
+      - ./import:/var/lib/neo4j/import:Z
     ports:
       - "7474:7474"
       - "7687:7687"
